@@ -1,0 +1,7 @@
+<h1>Contact Us</h1>
+<p>If you have any questions or comments, please use the form below to send us a message.</p>
+<form method="POST" id="contact-form">
+  {% csrf_token %}
+  {{ form.as_p }}
+  <button id="submit-btn" type="submit">Send</button>
+</form>
